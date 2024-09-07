@@ -59,7 +59,7 @@
 
 **Arduino Board**:- This is an arduino microcontroller board. An open-source platform called Arduino is used to create electronics projects. The Arduino system comprises of a physical programmable circuit board, often known as a microcontroller, and an IDE (Integrated Development Environment) software that runs on your computer and is used to write and upload computer code to the board.The Arduino platform has become quite popular with people just starting out with electronics, the Arduino does not need a separate piece of hardware (called a programmer) in order to load new code onto the board -- you can simply use a USB cable. 
 
-![image](https://github.com/kmkalpana2001/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/165163110/ff3696b5-cf69-41dd-86e5-160875e8eaba)
+![image](https://github.com/THIRUPATHI-959/nasscom_vsd_soc_design_thirupathi/assets/165163110/ff3696b5-cf69-41dd-86e5-160875e8eaba)
 
 
 #### chip components 
