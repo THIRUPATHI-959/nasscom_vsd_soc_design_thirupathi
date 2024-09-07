@@ -71,6 +71,8 @@
 
 (3) **Die:** Present at the corner. it is the size of the entire chip.
 
+![image](https://github.com/kmkalpana2001/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/165163110/0900c16a-29b9-47fd-84bd-28b7249a2938)
+
 ### <h1 id="header-1_1_2">Introduction to RISC-V</h1>
 RISC-V, where five refers to the number of generations of RISC architecture that were developed at the University of California, Berkeley. RISC is an open standard instruction set architecture (ISA) based on established RISC principles. Unlike most other ISA designs, RISC-V is provided under open source licenses that do not require fees to use. A number of companies are offering or have announced RISC-V hardware, open source operating systems with RISC-V support are available, and the instruction set is supported in several popular software toolchains.
 
@@ -328,7 +330,7 @@ And in the report, we can see when the actual synthesis has done. and the actual
 ![image](https://github.com/kmkalpana2001/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/165163110/a1099ec5-2a9f-434f-af4f-28e34f0eabf5)
 
 
-
+<img src="D:\tool\aurdino.png"/>
 
 
 
