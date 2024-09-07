@@ -61,18 +61,15 @@
 
 ![image](https://github.com/THIRUPATHI-959/nasscom_vsd_soc_design_thirupathi/assets/165163110/ff3696b5-cf69-41dd-86e5-160875e8eaba)
 
+**EX. RISC-V SoC**:- It consist of SRAM,SOC,ADC,DAC,SPI these all are called foundary IP's.All devices depends upon foundary where all chips are fabricated using deposition and lithography techniques and so on.
 
+![image](https://github.com/kmkalpana2001/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/165163110/0900c16a-29b9-47fd-84bd-28b7249a2938)
 #### chip components 
 (1) **Pads:** Through which we can send the signal inside the chip.
 
 (2) **Core:** Place where all the logic gates are fixed.
 
 (3) **Die:** Present at the corner. it is the size of the entire chip.
-
-**EX. RISC-V SoC**:- It consist of SRAM,SOC,ADC,DAC,SPI these all are called foundary IP's.All devices depends upon foundary where all chips are fabricated using deposition and lithography techniques and so on.
-
-![image](https://github.com/kmkalpana2001/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/165163110/0900c16a-29b9-47fd-84bd-28b7249a2938)
-
 
 ### <h1 id="header-1_1_2">Introduction to RISC-V</h1>
 RISC-V, where five refers to the number of generations of RISC architecture that were developed at the University of California, Berkeley. RISC is an open standard instruction set architecture (ISA) based on established RISC principles. Unlike most other ISA designs, RISC-V is provided under open source licenses that do not require fees to use. A number of companies are offering or have announced RISC-V hardware, open source operating systems with RISC-V support are available, and the instruction set is supported in several popular software toolchains.
