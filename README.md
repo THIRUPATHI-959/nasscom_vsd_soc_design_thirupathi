@@ -38,18 +38,17 @@
 # <h1 id="header-1">Detailed structure of the OpenLANE Directory</h1>
 ## <h1 id="header-1_3">Get familiar to open-source EDA tools</h1>
 ### <h1 id="header-1_3_1">OpenLANE Directory structure in detail</h1>
-**Basic Linux Commands**
 
-**cd** : opens the particular folder
+**Basic Linux Commands how to use in our workshop**
 
-**ls** : lists the content of the folder
-
-**pwd** : shows the present working directory
-
-**mkdir** : to make a new directory
-
+**pwd**: it gives the present working directory
+**mkdir** : to create a new directory
+**cd** : opens the particular directory
+**cd ../** :goes to 1 directory back 
+**cd ../../../** :goes to 3 directory back
+**ls** : lists all the files and directories in the current working directory
+**ls-ltr** :to list all the files and directories in linux practice directories in long listing format and according to time they are created 
 **command --help** : shows the complete use that command
-
 **clear** : clears the terminal screen
 
 Here we are working in Sky130_fd_sc_hd PDK varient. where, "sky130" is process name or node name."fd" is a foundary name (skyWater foundary)."sc" means standerd cell librery files and the last one "hd" stands for high density(basically one type of varient).
