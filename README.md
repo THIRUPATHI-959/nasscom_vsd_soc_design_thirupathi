@@ -60,7 +60,7 @@
 **Arduino Board**:- This is an arduino microcontroller board. An open-source platform called Arduino is used to create electronics projects. The Arduino system comprises of a physical programmable circuit board, often known as a microcontroller, and an IDE (Integrated Development Environment) software that runs on your computer and is used to write and upload computer code to the board.The Arduino platform has become quite popular with people just starting out with electronics, the Arduino does not need a separate piece of hardware (called a programmer) in order to load new code onto the board -- you can simply use a USB cable. 
 
 ![image](https://github.com/user-attachments/assets/ae6cb680-bded-469d-b438-1f51ddf703e7)
-![image](https://github.com/user-attachments/assets/f6a73f0e-99f5-440d-b2e0-2f62544c9578)
+
 
 
 
@@ -79,7 +79,7 @@
 
 ![image](https://github.com/user-attachments/assets/2b86e1fe-8fbf-4d12-901d-06f9095c31f3)
 
-
+![image](https://github.com/user-attachments/assets/f6a73f0e-99f5-440d-b2e0-2f62544c9578)
 
 
 ### <h1 id="header-1_1_2">Introduction to RISC-V</h1>
