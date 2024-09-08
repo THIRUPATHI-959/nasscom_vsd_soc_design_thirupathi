@@ -122,6 +122,7 @@ Apps enters into a block of system software and system sodtware converts the ent
  Assembler take the instructions from compiler and convert them into respective binary numbers. This binary language now send to hardware and hardware performs ouput based on the function it recieve and gives the output.
  
 Instruction acts as abstract interface between C-language and the hardware.
+![image](https://github.com/user-attachments/assets/b5bcf26e-e0e2-4eb5-999a-663c0e30c3e2)
 
  
  
