@@ -144,20 +144,21 @@ To design Digital ASIC, few tools or things which are required from the day one.
 **RTL Design
 EDA tools
 PDK data**
-**what is RTL design?**
-In digital circuit design, register-transfer level (RTL) is a design abstraction which models a synchronous digital circuit in terms of the flow of digital signals (data) between hardware registers, and the logical operations performed on those signals.for this designs many open sorces are available. like, librecores.org, opencores.org, github.com, etc...
 
-**What is EDA tools?**
-The term Electronic Design Automation (EDA) refers to the tools that are used to design and verify integrated circuits (ICs), printed circuit boards (PCBs), and electronic systems, in general. many open sorces tools are available like Qflow, OpenROAD, OpenLANE, etc...
+1[image](https://github.com/user-attachments/assets/2dcfc710-3ea7-4c27-a0d3-1fd78839404b)
+**RTL design?**
+Register-transfer level (RTL) is a design concept used in digital circuit design that describes how digital signals (data) move between hardware registers and how logical operations are applied to those signals in a synchronous digital circuit and asynchronous digital circuits.There are numerous open sources available for this design. like, librecores.org, opencores.org, github.com, etc...
 
-**What is PDK Data?**
+**EDA tools?**
+The tools used to design and validate printed circuit boards (PCBs), integrated circuits (ICs), and electronic systems are referred to as electronic design automation, or EDA, in general. many open sorces tools are available like Qflow, OpenROAD, OpenLANE, etc...
+
+**PDK Data?**
 PDK is process design kit. It is interface between FAB and design. This data is collections of files like,
-
 process design rules: DRC, LVS, REX
 Digital standerd cell libreries
 i/o librerirs
-etc.....
-which are used to model a fabrication process for the EDA tools used to design an ICs. for example, in 2020, google release the open source PDK for FOSS 130nm production with the skywater technology. But right now it is at cutting age of the 5 nm also. But in many applications, the advance node is not required, and the cost of advanced node is also high as compared to 130nm processors. This 130nm processors are also fast processor. for example,
+
+for the EDA tools used in IC design, for the purpose to simulate the fabrication process. Utilizing Skywater technology, for for example, Google released the open source PDK for FOSS 130nm manufacture in 2020. Yet, it's currently at the 5-nm cutting age as well. However, compared to CPUs with 130nm architecture, the advanced node is more expensive and not necessary in many applications. The CPUs made at 130 nm are likewise quick. for example,
 
 intel: P4EE @3.46 GHz(Q4'o4)
 
@@ -165,28 +166,45 @@ sky130_OSU (single cycle RV32i CPU) pipeline version can achieve more than 1 GHz
 
 ### <h1 id="header-1_2_2"> Simplified RTL2GDS flow</h1>
 
+![image](https://github.com/user-attachments/assets/9a765d05-80db-4423-9348-52d3fb0f5a55)
 
 
-**Step 1. Synthesis**:-  In the synthesis, the design RTL is translated to a circuit out from the SCL. The resultant circuit is describes in HDL and usualy refered to the gate level netlist. the gate level netlist is functionaly equivelent to the RTL. "standard Cells" have regular layouts like Electrical. HDL,SPICE
+
+**Step 1. Synthesis**:-  In the synthesis, the design RTL is translated to a circuit out from the SCL. The resultant circuit is describes in HDL and usualy refered to the gate level netlist. the gate level netlist is functionaly equivelent to the RTL. "standard Cells" have regular layouts like Electrical. HDL,SPICE.
+
+![image](https://github.com/user-attachments/assets/0abaab30-e279-49ca-93f2-f1ad03b00456)
+
+standard cell
+![image](https://github.com/user-attachments/assets/075a852a-6bab-4767-a657-74a70d6af7aa)
 
 **Step 2. Floor/Power Planning**:-The main objective here is that to plan silicon area and distribute the power to the whole circuit. In the chip floor planning, the partition chip die between different system building blocks and place the i/o pads. In micro floor planning, we define the dimensions, pin locations, rows.
 In power planning, the power network is connstructed. tipically, the chip is power by multiple VDD and GND. so, total components are connected to power supply horizontaly and vertically by metal streps. here parallel structures are used to reduce the resistance. To address the electromagnetization problem, power distribution network uses upper metal leyers, which are thicker than lower metal layers. Hence have less resistance.
+![image](https://github.com/user-attachments/assets/cd3eadc6-5445-4fe4-b6bf-385cef8d07eb)
+macro planning
+![image](https://github.com/user-attachments/assets/72c41402-e8d6-497f-be33-f2af76b02c40)
+power planning
+![image](https://github.com/user-attachments/assets/7f9ddea1-10b1-467f-b6b3-b74353b5be14)
 
 
 
 **Step 3. Placement**:- In this process, we place the gate level netlist on the floor planning rows, alligned with the sites. cells should be placed very closed to eachother to reduce the interconnnect delay. Usually placement is done in 2 steps:
 
+
 **Global placement**:- It is very first stage of the placement where cells are placed inside the core area for the first time looking at the timing and congestion. Global Placement aims at generating a rough placement solution that may violate some placement constraints while maintaining a global view of the whole Netlist.
 
 **Detailed placement**:- In detailed placements, we determined the exact route and layers for each netlist. the objective of detailed placement is valid routing, minimize area and meet timing constrains. Additional objective is minimum via and less power.
+![image](https://github.com/user-attachments/assets/0f663770-f269-4c45-8003-c39dc25dbb06)
+
 
 
 
 **Step 4. Clock Tree Synthesis**:- Before routing the signals, we have to route the clock. In the process of clock synthesis, we have distribute the clock to the every sequential elements. for example flipflops, registers, ADC, DAC ete. basically clock netwroks looks likes a tree. where the clock source is roots and the clock elements are end leaves. Synthesization should be done in a manner that with minimum skew and in a good shape.To minimize the clock skew by using the low-skew global routing resources for clock signals.Microsemi devices provide various types of global routing resources that significantly reduce skew.Usually a tree is a H tree, X tree etc.
+![image](https://github.com/user-attachments/assets/be9b3be0-89eb-4791-a46f-4d249b28ecc4)
 
 
 
 **Step 5. Routing**:- After routing the clock, the signal routing comes. Making physical connections between signal pins using metal layers are called Routing. Routing is the stage after CTS and optimization where exact paths for the interconnection of standard cells and macros and I/O pins are determined. There are two types of nets in VLSI systems that need special attention in routing:
+![image](https://github.com/user-attachments/assets/609003d9-2d6d-43ca-a080-33cbbda9bdcc)
 
 Clock nets
 Power/Ground nets
