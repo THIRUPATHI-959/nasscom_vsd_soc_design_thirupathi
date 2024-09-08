@@ -71,7 +71,7 @@
 (3) **Die:** Present at the corner. it is the size of the entire chip.
 
 
-![image](https://github.com/THIRUPATHI-959/nasscom_vsd_soc_design_thirupathi/assets/8e9799c4-d119-4ecf-ad59-9bfff52d08d8)
+
 
 ### <h1 id="header-1_1_2">Introduction to RISC-V</h1>
 RISC-V, where five refers to the number of generations of RISC architecture that were developed at the University of California, Berkeley. RISC is an open standard instruction set architecture (ISA) based on established RISC principles. Unlike most other ISA designs, RISC-V is provided under open source licenses that do not require fees to use. A number of companies are offering or have announced RISC-V hardware, open source operating systems with RISC-V support are available, and the instruction set is supported in several popular software toolchains.
