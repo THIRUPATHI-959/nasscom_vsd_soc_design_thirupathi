@@ -125,7 +125,14 @@ The operating system manages low-level system functions, memory allocation, and 
  Assembler take the instructions from compiler and convert them into respective binary numbers. This binary language now send to hardware and hardware performs ouput based on the function it recieve and gives the output.
  
 Instruction acts as abstract interface between C-language and the hardware.
+
 ![image](https://github.com/user-attachments/assets/b5bcf26e-e0e2-4eb5-999a-663c0e30c3e2)
+
+The output of OS is nothing but small functions in C,C++, JAVA those will taken by the respective compiler and converted into instructions. The syntax of this instructions belongs to respective hardware ,take those instructions into assembler converts to 0 & 1 binary (machine language)
+
+![image](https://github.com/user-attachments/assets/55fc1ce9-451b-4cc4-a991-aa0ed1fd2ec7)
+
+![image](https://github.com/user-attachments/assets/66bee196-ad70-49c5-94a2-1ccd7e957d7d)
 
  
  
