@@ -64,17 +64,32 @@
 
 
 
-**EX. RISC-V SoC**:- It consist of SRAM,SOC,ADC,DAC,SPI these all are called foundary IP's.All devices depends upon foundary where all chips are fabricated using deposition and lithography techniques and so on.
-
+**EX. Processor/SoC**:- Along with this Processor / SOC we had so many interfaces like It consist of SRAM,SOC,ADC,DAC,SPI these all are called foundary IP's.vAll devices depends upon foundary where all chips are fabricated using deposition and lithography techniques , here we follow several steps to follow the chip like 
+--Crystal growth and wafer preparation
+--Epitaxy
+--Dielectric and polysilicon film deposition
+--Oxidation
+--Lithography
+--Dry etching 
+--Ion implantation and diffusion
+--Annealing
+--Silicon deposition
+--Metallization
+--Testing
 
 ![image](https://github.com/user-attachments/assets/2c49e6e5-1d94-4a66-be2f-9e551ace344d)
 
 #### chip components 
-(1) **Pads:** Through which we can send the signal inside the chip.
+if you open the IP'S it looks like as shown below , he width and breadth dimesion is 7mm*7mm
+![image](https://github.com/user-attachments/assets/c4535ad3-3a0d-4da7-8bc2-63b31fc4f17b)
 
-(2) **Core:** Place where all the logic gates are fixed.
+Inside the chip several components like pads, core, die 
 
-(3) **Die:** Present at the corner. it is the size of the entire chip.
+(1) **Pads:** Through which we can send the signal outside/insede the chip.
+
+(2) **Core:** Place digital logic cells like OR,AND,MUX ..  where all the logic gates are fixed.
+
+(3) **Die:** Present at the corner. it is the size of the entire chip and Its manufacture on the silicon wafer.
 
 
 ![image](https://github.com/user-attachments/assets/2b86e1fe-8fbf-4d12-901d-06f9095c31f3)
