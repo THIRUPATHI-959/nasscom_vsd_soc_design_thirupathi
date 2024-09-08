@@ -174,7 +174,7 @@ sky130_OSU (single cycle RV32i CPU) pipeline version can achieve more than 1 GHz
 
 ![image](https://github.com/user-attachments/assets/0abaab30-e279-49ca-93f2-f1ad03b00456)
 
-standard cell
+                             standard cell
 ![image](https://github.com/user-attachments/assets/075a852a-6bab-4767-a657-74a70d6af7aa)
 
 **Step 2. Floor/Power Planning**:-The main objective here is that to plan silicon area and distribute the power to the whole circuit. In the chip floor planning, the partition chip die between different system building blocks and place the i/o pads. In micro floor planning, we define the dimensions, pin locations, rows.
