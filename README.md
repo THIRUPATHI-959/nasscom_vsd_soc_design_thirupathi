@@ -72,7 +72,7 @@
 (3) **Die:** Present at the corner. it is the size of the entire chip.
 
 
-<img width="248" alt="aurdino" src="https://github.com/user-attachments/assets/48585a66-50d4-45c8-8a1f-eced2e111616
+![image](https://github.com/user-attachments/assets/48585a66-50d4-45c8-8a1f-eced2e111616)
 ![image](https://github.com/kmkalpana2001/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/165163110/0900c16a-29b9-47fd-84bd-28b7249a2938)
 
 ### <h1 id="header-1_1_2">Introduction to RISC-V</h1>
