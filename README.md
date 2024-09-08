@@ -320,23 +320,23 @@ Sky130_fd_sc_hd varient contains many technology files like verilog, spice, tech
 ### <h1 id="header-1_3_2">Design Preparation Step</h1>
 when we enter in the OpenLANE, we have to use flow.tcl because as a name says, it will goes with the flow using the script. And by using interactive switch, we will do step by step process. without interactive switch, it will run complete flow from RTL to GDSII. Now OpenLANE is open and we can see that prompt will change now.
 
-
+![image](https://github.com/user-attachments/assets/ed3aed35-fe5f-460e-b782-60dfd92f18df)
 
 Now we have to input all the packages which required to run the flow.
 
-
+![image](https://github.com/user-attachments/assets/46d2cc3c-9591-4729-ad8d-745464d16a36)
 
 Now, here we are ready to execute the command.
 
 Now, if we are going into the design folder in openlane, there are nearly 30-40 designs are already builted. Out of them we can open any of the design. for example, here we are opening the picorv32a.v design. In this design we can see many files are available. i.e., scr, config.tcl, etc. This config.tlc file contains every details about the design. for example, details about enrollment, clock period, clock period port etc.
 
-
+![image](https://github.com/user-attachments/assets/bccf2262-0883-4353-8574-84afd9771cdd)
 
 Here we can see that the time period is set to the 5.00 nsec. but is we see in the openlane sky130_fd_sc_hd folder, the period is set about 24 nsec. so it is not override to the main file. If it override then give first priority to the main folder.
 
 Now, in openlane, we are going to run the synthesis, but before synthesis, we have to prepare design setup stage. for that command is ``` prep -design picorv32a```
 
-
+![image](https://github.com/user-attachments/assets/38c6ad67-84c4-4525-9fea-ac6c57e292e2)
 
 so, here it is shown that preparation is completed.
 
@@ -347,7 +347,7 @@ After completing the preparation, in the picorv32a file, the run terictory is cr
 
 In the temp file, merged.lef file is available which was created in preparation time. if we open this merged.lef file, we get all the wire or layer level and cell level information.
 
-
+![image](https://github.com/user-attachments/assets/5d7ce5a1-7e51-48c5-9fb3-523f0e6ef024)
 
 While, in the result folder is empty because till we have not run anything and in the report folder all the folders are there about synthesis, placement, floorplanning,cts,routing,magic,lvs.
 
@@ -357,13 +357,17 @@ when we make some change in the origional configuration and then we run, for exa
 
 Now coming to the openlane, we are going to run the synthesis. for that command is ```run_synthesis``` It will take some 3-4 mnts to run the synthesis and finally synthesis will complited.
 
+![image](https://github.com/user-attachments/assets/3424573b-ed06-4832-b089-a555c98ff989)
 
+
+
+![image](https://github.com/user-attachments/assets/87c93d2c-d905-48e1-bb16-eead8d1575db)
 
 ### <h1 id="header-1_3_5">Steps to characterize synthesis results</h1>
 
 From the data of synthesis, total number of counter D_flip-flops is 1613. and the number of cells is 14876.
 
-
+![image](https://github.com/user-attachments/assets/5bab437f-71d6-4637-b009-8b4be8c05c09)
 
 So, the flop ratio = (number of flip flops)/(number of total cell).
 
@@ -371,12 +375,12 @@ So, the flop ratio is 10.84%.
 
 Before run, we saw that the result folder is empty. but now, after running the synthesis, we can see that all the mapping have been done by ABC.
 
-
+![image](https://github.com/user-attachments/assets/35ecdff6-d6ef-43e9-9e6c-5492538b3cc0)
 
 And in the report, we can see when the actual synthesis has done. and the actual statistics synthesis report is showing below, which is same as what we have seen before.
 
 
-
+![image](https://github.com/user-attachments/assets/2cc3cee5-62f3-42a0-977f-f3e8f7fbb816)
 
 <img src="D:\tool\aurdino.png"/>
 
