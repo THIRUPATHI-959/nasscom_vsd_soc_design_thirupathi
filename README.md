@@ -107,17 +107,20 @@ Chip is connected to the package with the help of bond wires.
 
 
 ### <h1 id="header-1_1_2">From Software Applications to Hardware</h1>
-Here we will se how apps runs on the system?
+Here we observe how application software enters into the system software?
 
-Application Software - System Software - Hardware chip
+Application Software -----> System Software ------> Hardware chip
 
-Apps enters into a block of system software and system sodtware converts the entire program into binary language. There are some layers inside the system software whish are as follows
+Apps enters into a system software and system software converts the application  program  into binary language. There are some layers inside the system software whish are as follows
+the application software like chrome ,caluclator,ms office..etc 
+
 
 **Operating System, Compiler, Assembler**
 
- Operating system handles input/output operations and allocate memory also it manage the low level system functions.
 
- Compiler takes the output from the operating system as C,C++,Java and convert them into intsructions. These instructions depends upon hardware.
+The operating system manages low-level system functions, memory allocation, and input/output operations.
+
+ The compiler transforms the operating system's C, C++, and Java output into instructions. These guidelines rely on the hardware.
 
  Assembler take the instructions from compiler and convert them into respective binary numbers. This binary language now send to hardware and hardware performs ouput based on the function it recieve and gives the output.
  
