@@ -624,13 +624,13 @@ So, floor plan is ready for Placement and Routing step.
 
 Before run the floorplanning, we required some switches for the floorplanning. these we can get from the configuration from openlane.
 
-![image](https://github.com/kmkalpana2001/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/165163110/67041b25-ee43-4864-9bce-fb0386d53641)
+![image](https://github.com/user-attachments/assets/23317dc7-6d5e-4bd6-a48a-eda1229ca268)
 
 Here we can see that the core utilization ratio is 50% (bydefault) and aspect ratio is 1 (bydefault). similarly other information is also given. But it is not neccessory to take these values. we need to change these value as per the given requirments also.
 
 Here FP_PDN files are set the power distribution network. These switches are set in the floorplane stage bydefault in OpenLANE.
 
-![image](https://github.com/kmkalpana2001/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/165163110/2b1281f9-b85a-4b08-b507-49c39c51c434)
+![image](https://github.com/user-attachments/assets/785cbae5-402c-4aa8-94a0-33c94793e791)
 
 Here, (FP_IO MODE) 1, 0 means pin positioning is random but it is on equal distance.
 
@@ -642,7 +642,7 @@ Now we see, with this settings how floorplan run.
 
 In the run folder, we can see the connfig.tcl file. this file contains all the configuration that are taken by the flow. if we open the config.tcl file, then we can see that which are the parameters are accepted in the current flow.
 
-![image](https://github.com/kmkalpana2001/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/165163110/be2a8bf3-4857-427e-a690-5ff3241bfbd9)
+![image](https://github.com/user-attachments/assets/e88b3965-9d85-483c-bacc-d928ac09ec98)
 
 ![image](https://github.com/kmkalpana2001/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/165163110/36985c6b-3e9f-473d-ab32-29b224cff6f1)
 
