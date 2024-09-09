@@ -471,22 +471,24 @@ And in the report, we can see when the actual synthesis has done. and the actual
 ## <h2 id="header-2_1">Chip Floor planning consideration</h2>
 ### <h2 id="header-2_1_1">Utilization factor and aspect ratio</h2>
 
-In this section we will try to cover up the width and height of Core and Die. It is the first step in physical design flow to find out the width and height. Let's begin with a netlist, netlist  is two flipflops and have a simple combination logic in between. A netlist describes the connectivity of an electronic design. Here, we dependent on the dimensions of the logic gates(AND & OR) and particular flipflop. Now, let's convert the symbols into physical dimensions. We are interested in the dimensions of the Core and Die not in the dimensions of the wires. 
+We shall attempt to conceal Core and Die's width and height in this section. Determining the width and height is the initial stage in the physical design flow. First, let's look at a netlist, which consists of two flipflops with a straightforward combination logic in between. An electronic design's connectivity is described by a netlist. Here, we rely on the specific flipflop's dimensions as well as the size of the logic gates (AND & OR). Let's translate the symbols into actual dimensions now. The dimensions of the Die and Core are what matter to us, not the wires' dimensions. 
 
 Let's standard cell have dimensions of 1unit*1unit
 
 So, area= 1 Sq. units
 
-Asuume same area for the flipflop as well = 1 Sq. units
+Use the same space for the flip-flop as well = 1 Sq. units
 
 with help of these dimensions and netlist let's calculate the area occupied by the netlist on a silicon wafer.
-![image](https://github.com/user-attachments/assets/f19dcbea-27c6-4f82-9c38-e3b8818dfa17)![image](https://github.com/user-attachments/assets/a68ab1b0-093e-4e50-a74a-25214d87d4d)
+![image](https://github.com/user-attachments/assets/f19dcbea-27c6-4f82-9c38-e3b8818dfa17)
+
+![image](https://github.com/user-attachments/assets/a68ab1b0-093e-4e50-a74a-25214d87d4d)
 
 Befor that will remove all the wires and bring all the flip flops and logic gates in a single plate. So after combining them together width and length will be 2 Sq. units each and if we calculate the total area the it will be 4 Sq. units. So now we have the rough calculation of minimum area occupied by the netlist.
 
-![image](https://github.com/kmkalpana2001/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/165163110/beb2d87b-db4f-47ac-95db-7a5586018c98)
+![image](https://github.com/user-attachments/assets/e4858796-507e-44a1-8c5a-3981d6b09148)
 
-What is 'Core' and 'Die' section of a chip?
+What is 'Core' and 'Die' section of a  chip?
 
 Let's have a silicon wafer on which all the logics are implemented. In thes one section is refered as 'Die' and inside the Die we have the Core. 
 
