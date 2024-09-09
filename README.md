@@ -656,35 +656,35 @@ To see the actual layout after the flow, we have to open the magic file by addin
 
 And then after pressing the enter, Magic file will open. here we can see the layout.
 
-![image]()
+![image](https://github.com/user-attachments/assets/5aef0a5f-544a-489a-80db-6afb72fd63fb)
 
 
 ### <h2 id="header-2_1_8">Review floorplan layout in Magic</h2>
 
 In the layout we can see that, input output pins are at equal distance.
 
-![image]()
+![image](https://github.com/user-attachments/assets/3a9dcdf2-5094-42b7-b99e-7b88d8b3e2b2)
 
 
 after selecting (To select object, first click on the object and then press 's' from keyboard. the object will hight lited. to zoom in the object, click on the object and then press 'z' and for zoom out press 'sft+z') one input pin, if we want to check the location or to know at on which layer it is available, we have to open tkcon window and type "what". it will shows all the details about that perticular pin.
 
-![image]()
+![image](https://github.com/user-attachments/assets/d24ddc1e-f1f8-453b-845a-2b34dd39cd48)
 
 
 so, it show that the pin is in the metal 3.similarly doing for the vertical pins, we find that this pin is at metal 2.
 
-![image]()
+![image](https://github.com/user-attachments/assets/03dabbb4-de16-4cc6-ad91-5489bf063ac3)
 
 
 Along with the side rows,the Decap cells are arranged at the border of the side rows.
 
-![image]()
+![image](https://github.com/user-attachments/assets/632b633e-de4c-4c15-9d39-fccf381ba8e6)
 
 
 
 here we can see that first standerd cells is for buffer 1. similarly other cells are for buffer 2, AND gate etc.
 
-![image]()
+![image](https://github.com/user-attachments/assets/10201728-5ba3-4971-9d83-7175bbc31f12)
 
 
 ## <h2 id="header-2_2">Library building and Placement</h2>
