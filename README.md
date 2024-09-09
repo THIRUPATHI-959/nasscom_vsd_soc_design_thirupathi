@@ -480,8 +480,7 @@ So, area= 1 Sq. units
 Asuume same area for the flipflop as well = 1 Sq. units
 
 with help of these dimensions and netlist let's calculate the area occupied by the netlist on a silicon wafer.
-
-![image](https://github.com/kmkalpana2001/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/165163110/abf79875-e1e3-4faf-87a6-43a12d44db8d)
+![image](https://github.com/user-attachments/assets/f19dcbea-27c6-4f82-9c38-e3b8818dfa17)![image](https://github.com/user-attachments/assets/a68ab1b0-093e-4e50-a74a-25214d87d4d)
 
 Befor that will remove all the wires and bring all the flip flops and logic gates in a single plate. So after combining them together width and length will be 2 Sq. units each and if we calculate the total area the it will be 4 Sq. units. So now we have the rough calculation of minimum area occupied by the netlist.
 
