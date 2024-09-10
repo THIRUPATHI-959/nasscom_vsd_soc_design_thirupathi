@@ -692,48 +692,48 @@ here we can see that first standerd cells is for buffer 1. similarly other cells
 
 **Bind netlist with physical cells**:- Lets we have the netlist of gates and shape of these gates represents the functionality of this gates. Foe example we have NOT gate as a tringular shape but in reality it is a box with physical dimensions it has width and height.Similarly for AND gate it also has a box shape in reality, Flipfops are also square boxes.So, we have given the physical dimensions to all the gates and flipflops. For everycomponent of the netlist we will give the particular shape with particular dimensions because ir real world the shapes like AND,OR gates does not exists so we make them as square all the blocks also have the width and height and proper shape.
 
-![image]() 
+![image](https://github.com/user-attachments/assets/8c3cd9d3-bcc2-4992-b6a0-7655ba622e73) 
 
 Now we will remove the wires,all the gates, flipflops and blocks are present in the shelf which is called as **Library**.
 
 A library is a place where you can find all kind of books all the gates,f/f are books here. Library also has the timing information of the perticular book like delay of the gates. Library can be devides into two sublibraries, One library consist of shape and size and other library might consist only of the delay information. Library has the various flavours of each and  every cell. Like same cell can have bigger in size in different self, bigger the size of cell lesser the resestnce path so it will work faster and will have lesser delay. We can pick up from these what we want based on the timing condition and available space on the floorplan.
 
-![image]()
+![image](https://github.com/user-attachments/assets/a4add990-4b73-4674-9ceb-e3f1e96611eb)
 
 **Placement**:- Once we have given proper shape and size to each and every gates the next step is to take those particular shapes ans sizes and place it on the floorplan. We have the floorplan with inout and output ports, we have particular netlist, and we have particular size given to each component of this netlist. So we have the physical view of the logic gates. Next step is to place the netlist onto the floorplan. We have to take the connectivity information from the netlist and design the physical view gates on the floorplan.
 
-![image]() 
+![image](https://github.com/user-attachments/assets/c8344c93-ee14-4042-a631-bf2c2496b63e) 
 
 Now, we have the floorplan where we have the preplaced cells from the previous slides, Plcement will make syre that the pre placed cells locations are not affected they are kept as it as and the second thing which will be taken care of that is no cell should be placed over the pre-placed cells. We need to place the physical view of the netlist onto the floorplan in such a fashion that logical connectivity should be maintained and that particular circuit should interact with their input and output ports to maintain the timing and the delay will be minimal.
 
-![image]()
+![image](https://github.com/user-attachments/assets/ce38f05b-f03a-4d4e-afd9-6d4de0dc1527)
 
 
 Here first we will see the arrangement of the remaining parts from the netlist onto the floorplan.We have placed all the element in such manner that all elements are closed to it's input and output pins.
 But, the distance of FF1 of Stage 4 and Din4 is still far them others. By optimizing the placement, we can solve this problem.
 
-![image]()
+![image](https://github.com/user-attachments/assets/10e232c1-7751-45a7-a6d5-8edd5b823c03)
 
 
 ### <h2 id="header-2_2_2">Optimize placement using estimated wire-length and capacitance</h2>
 
 **Optimize Plecement:-** In optimize placement we will resolve the problem of distancing.Lrt's take the example of FF1 to Din2. There must be a wire going from Din2 to FF1 but before going into routing the desing or wiring we will try to estimate the capacitances. If we lokk the capacitance from Din2 to FF1 it is every huge because wire length is huge in that case even the resutance will also be huge because of that length. If we send the signal from Din2 then it will be difficult for FF1 to catch that input because distance is large. So we can place some intermediate steps to maitain the Signal integrity. By this the input is succesfully driven to the FF1 from Din2. These intermediate steps are called here Repeaters , Repeaters are basically buffers that will recondition the original signal and make a bew signal which replicate the original signal and send it forward this process repeates untill we reach to the actual cell where we want to send the input in this way signal integrity is maintained. By using repeaters we resolve the problem of signal integrity but there will be a loose of area because more and more repeaters are used more area will be used of the particular floorplan.
 
-![image]()
+![image](https://github.com/user-attachments/assets/b44e62f2-4aa6-4b85-8744-f6acec978135)
 
 In the stage 1, there is no need of any repeater to transmit the signal. But in stage 2, due to high distance, the lenth of wire is high and signal is not transmitted in perticular range. so we required repeater.
 
-![image]()
+![image](https://github.com/user-attachments/assets/b44e62f2-4aa6-4b85-8744-f6acec978135)
 
 ### <h2 id="header-2_2_3">Final placement optimization</h2>
 
 As similar to stage 2, in Stage 3 also we required the buffer between gate2 and FF2.
 
-![image]()
+![image](https://github.com/user-attachments/assets/3f22f197-f30c-4c79-8d30-65324710dea4)
 
 Stage 4 is bit tricky as compared to other stages.Now we have to check that, what we have done is correct or not. For that we need to do Timing analysis by considering the ideal clocks and according to the data of analysis, we will understand that, the placement is correct or not.
 
-![image]()
+![image](https://github.com/user-attachments/assets/f5397237-bc09-4c1a-9ad6-4723165b7ff9)
 
 ### <h2 id="header-2_2_4">Need for libraries and characterization</h2>
 
@@ -751,11 +751,11 @@ When we run the placement, first Global placement is happens. main objective of 
 
 Now opening the Magic file to see actual view of standerd cells placement.And the actual view in the magic file is given below.
 
-![image]()
+![image](https://github.com/user-attachments/assets/6d87c0fe-58ed-4ff5-88d6-ac60649b9603)
 
 If we zooom into this, we find the buffers, gates, flip flops in this.
 
-![image]()
+![image](https://github.com/user-attachments/assets/8aea2c9d-560b-4397-b719-86714f9177d4)
 
 
 
