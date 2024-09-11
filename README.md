@@ -764,7 +764,7 @@ If we zooom into this, we find the buffers, gates, flip flops in this.
 
 In Cell Design Flow, Gates, flipflops, buffers are named as 'Standard Cells'. These standard cells are being placed in the section called as 'Library'.And in the library many other cells are available which have same functionality but the size is different.
 
-![image]()
+![image](https://github.com/user-attachments/assets/ade12ffd-392f-4167-af0f-00c1d1ac1753)
 
 If you lokk into one of the inverter from the library the cell design flowis as follows
 
@@ -778,7 +778,7 @@ The inverter has to represented in form of the shape, drive strength, power char
 
 **1)Inputs**:- Inputs required for cell design is PDKs, DRC and LVS rules SPICE models, library and user defined specs. In DRC& LVS rules tech file is provided which contains design rules and actual values. Rules can be converted in to code. SPICE MODEL tells about threshold voltage equation.
 
-![image]()
+![image](https://github.com/user-attachments/assets/72d1d69f-14d6-4ab9-a14c-4af5d8dafd1d)
 
 ### <h2 id="header-2_3_2">Circuit design steps</h2>
 
@@ -795,28 +795,28 @@ First step is to implement the function itself and second step is to model the P
 The typical output what we get from the circuit design is CDL(circuit description language) file,GDSII,LEF,extracted spice netlist(.cir).
 
 
-![image](https://github.com/kmkalpana2001/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/165163110/8e9891ea-35e0-48eb-b6f5-53376c86528e)
+![image](https://github.com/user-attachments/assets/dc713703-c8a9-41e0-b48c-db889ec6a77d)
 
 
 ### <h2 id="header-2_3_3">Layout design step</h2>
 
 In Layout Design First step is to get the function implemented through the MOS transistor through a set of PMOS and NMOS transistor and the second step is to get the PMOS network graph and the  nNMOS network graph out of the design that has been implemented.
 
-![image](https://github.com/kmkalpana2001/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/165163110/25c9f2db-c630-41d7-be4a-cab6f93a94af)
+![image](https://github.com/user-attachments/assets/c99be860-5b42-440e-8d44-99ec3847f621)
 
 After getting the network graphs next step is to obtain the Euler's path. Eule's path is basically the path which is traced only once.
 
-![image](https://github.com/kmkalpana2001/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/165163110/117eb8be-2f24-4b7b-a5fa-052ef4b3bd43)
+![image](https://github.com/user-attachments/assets/3d53fd05-933e-4b22-a5b5-3cb42450f511)
 
 Next step is to draw stick diagram based on the Euler's path. This stick diagram is derived out of the circuit diagram.
 
-![image](https://github.com/kmkalpana2001/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/165163110/a89a6f84-fa7e-4a36-9af7-74ab04f5b5c3)
+![image](https://github.com/user-attachments/assets/e1440225-961d-414f-b339-4d76489360b7)
 
 
 
 Next step is to convert this stick diagram into a typical Layout, into a proper layout and then get the proper rule we have discissed earlier. Once we get the particular layout then we have the cell width, cell length and all the specifications will be there like drain current, pin locations and so on.
 
-![image](https://github.com/kmkalpana2001/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/165163110/7917c567-5aa7-4c66-b8ab-43e0e4808e06)
+![image](https://github.com/user-attachments/assets/ebce625f-1b8c-4698-8462-1744dd461d34)
 
 Next and Final step is to extract the parasatics of that particular layout and charaterise it in terms od timing. So before that the output of the layout design will be GDSll. Once you get the extracted spice netlist then we characterize it. Characterization helps in getting timing, noiseand power information.
 
@@ -826,13 +826,24 @@ Let's try to build the characterization flow based on the inputs we have,
 
 First step is to read in the model, second step is to read the extracted spice netlist, third step is to define or recognize the behaviour of the buffer, fourth step is to read the subcircuits of the inverter and then in the fifth step need to attach the necessary power supplies, sixth step is to  apply the stimulus then in the seventh step we need to provide the necessary output capacitance then in the final eighth step in which we need to provide necessary simulation command for example if we are doing transent simulation so we need to give ```.tran``` command , if we are doing DC simulation then we give ```.dc``` command.
 
-![image](https://github.com/kmkalpana2001/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/165163110/78e61e38-0569-4ffb-8b67-0d90cefbfe0b)
+
+
+![image](https://github.com/user-attachments/assets/a7943407-f949-4126-9e88-a6e5c07dc3c9)
+
+
+![image](https://github.com/user-attachments/assets/77a884d0-ce14-42e8-a8c8-c487060b5a8e)
+
+![image]()
+
+![image]()
+
+![image](https://github.com/user-attachments/assets/9dd56810-16e3-43d9-8f18-634314fd1b4c)
 
 Next step is to feed in all this inputs from 1 to 8 in a form of a configuration file to the characterization software **"GUNA"** .
 
 This software will generate power, noise and timing model.
 
-![image](https://github.com/kmkalpana2001/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/165163110/19b01aa6-c6ba-4d39-8d10-539a40ab9f39)
+![image](https://github.com/user-attachments/assets/13922b7d-7757-40b7-a425-f30dfb0256fe)
 
 ## <h2 id="header-2_4">General timing characterization parameters</h2>
 ### <h2 id="header-2_4_1">Timing threshold definitions</h2>
@@ -842,40 +853,40 @@ As seen in the previous section we have inverter connected back to back, we have
 
 in the figure below the term 'Slew_low_rise-thr' depicts the value close to 0. and the typically value of this is about 20% it could be 30% as well.
 
-![image](https://github.com/kmkalpana2001/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/165163110/3819e09b-be65-480b-b01b-dab709ef687b)
+![image](https://github.com/user-attachments/assets/afd2dfc5-186b-401d-8b35-da64ae672222)
 
 Slew_high_rise_thr
 
-![image](https://github.com/kmkalpana2001/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/165163110/d8134157-d13c-49b3-9ec2-ef50e8ff1bf7)
+![image](https://github.com/user-attachments/assets/7bc49d5a-d8e8-49a4-b2e4-6d617d09b95b)
 
 
 Slew_low_fall_thr
 
-![image](https://github.com/kmkalpana2001/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/165163110/cca7ece5-603a-46b4-b781-9c82b3d14f9b)
+![image](https://github.com/user-attachments/assets/9be0f642-d27e-437f-a0ad-870d1273c0fa)
 
 
 Slew_high_fall_thr
 
-![image](https://github.com/kmkalpana2001/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/165163110/3e5dd161-ff39-4a74-89da-06a642835f14)
+![image](https://github.com/user-attachments/assets/8b4ffc09-f6a6-4095-8882-51bcd85cc520)
 
 
 NOw, taking the waveform of input stimulus which is input of the first buffer and with that taking output of the first buffer.Similar as a slew, thresolds are for delay also available. for that same as slew, we have to take some rise and fall points from the waveforms. this tresolds are almost 50%.
 
 in_rise_thr
 
-![image](https://github.com/kmkalpana2001/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/165163110/eb232344-b6d9-4de0-b351-9910214a8fbc)
+![image](https://github.com/user-attachments/assets/94ff0f83-b772-4d04-bd3d-be99f850d0e8)
 
 in_fall_thr , its typical value is 50%.
 
-![image](https://github.com/kmkalpana2001/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/165163110/b40bb02f-aac3-4635-9615-d7e95901aa08)
+![image](https://github.com/user-attachments/assets/e6c61c21-1dd0-45bb-9d56-52a9b529c46c)
 
 out_rise_thr
 
-![image](https://github.com/kmkalpana2001/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/165163110/9e16ea11-c75e-40da-91d8-82baa271b7d8)
+![image](https://github.com/user-attachments/assets/6b9bd9f7-c43e-4429-88ee-65017537d1e7)
 
 out_fall_thr
 
-![image](https://github.com/kmkalpana2001/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/165163110/2cb0db7d-8dcb-41bb-b0d9-b2b10e8eb31b)
+![image](https://github.com/user-attachments/assets/68df140a-15e8-41c8-a091-7e4f76526778)
 
 
 ### <h2 id="header-2_4_2">Propagation delay and transition time</h2>
@@ -885,15 +896,15 @@ Based on these above values we are going to calculate the further values like pr
 If we want to calculate the delay of anything we need to subtract the out_rise_thr from in_rise_thr. Here let's take typical value 50%, let's see on the particular waveform how does it works
 Time delay = Time(out_thr)-time(in_thr).
 
-![image](https://github.com/kmkalpana2001/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/165163110/d157a7da-02ba-44d7-9acf-90899273eb7f)
+![image](https://github.com/user-attachments/assets/4427eebc-bbb2-462c-a521-4258cfb18b6c)
 
 In the above example in_rise_thr and out_fall)thr was kept at 50%. But if the threshold ponit moves to the top the the output comes before the input and we see negative delay and negative delays are not accepted. So the reason behind having this negative delay is poor choice od threshold point so thr choice of the threshold point is really important.
 
-![image](https://github.com/kmkalpana2001/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/165163110/6540a5e2-cf40-4202-994e-e7ff05d6d60f)
+![image](https://github.com/user-attachments/assets/f9a9d83b-c53a-4d1e-9f0b-74ab0972743a)
 
 Let's take another example where we have choosed threshold point correctly but still can get a negative delay. Because uotput comes before the input that's why we are getting negative delay here, which is not accepted
 
-![image](https://github.com/kmkalpana2001/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/165163110/03a0e311-2552-4a40-8345-9075f655fdee)
+![image](https://github.com/user-attachments/assets/3f4f4517-8b8a-4ef2-add8-b02cc9579c9c)
 
 **Transition time**=  time(slew_high_rise_thr)- time(slew_low_rise_thr)
 
@@ -903,7 +914,7 @@ transition time = time(slew_high_fall_thr)- time(slew_low_fall_thr)
 
 Let's say we have the waveform to understand the slew calculation.
 
-![image](https://github.com/kmkalpana2001/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/165163110/2f7d8314-e195-48fc-98f3-b20441352242)
+![image](https://github.com/user-attachments/assets/1c6b1dc9-1143-4fd3-8498-cffddac62c76)
 
 
 
