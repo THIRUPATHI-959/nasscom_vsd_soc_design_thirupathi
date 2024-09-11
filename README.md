@@ -128,7 +128,91 @@
       </ul>
 </div>
 
-   
+  <div class="toc">
+  <ul>
+    <li><a href="#header-3">Day 3 - Design library cell using Magic Layout and ngspice characterization</a></li>
+	<ul>
+        <li><a href="#header-3_1"> Labs for CMOS inverter ngspice simulations</a></li>
+		<ul>
+			<li><a href="#header-3_1_0">IO placer revision</a></li>
+		</ul>
+		 <ul>
+			<li><a href="#header-3_1_1">SPICE deck creation for CMOS inverter</a></li>
+		</ul>
+		<ul>
+			<li><a href="#header-3_1_2">SPICE simulation lab for CMOS inverter</a></li>
+		</ul>
+		<ul>
+			<li><a href="#header-3_1_3"> Switching Threshold Vm</a></li>
+		</ul>
+	      <ul>
+			<li><a href="#header-3_1_4">Static and dynamic simulation of CMOS inverter</a></li>
+		</ul>
+		<ul>
+			<li><a href="#header-3_1_5">Lab steps to git clone vsdstdcelldesign</a></li>
+		</ul>
+      </ul>
+      <ul>
+        <li><a href="#header-3_2">Inception of layout ̂A CMOS faabrication process </a></li>
+		 <ul>
+			<li><a href="#header-3_2_1">Create Active regions</a></li>
+		</ul>
+		<ul>
+			<li><a href="#header-3_2_2">Formation of N-well and P-well</a></li>
+		</ul>
+		<ul>
+			<li><a href="#header-3_2_3"> Formation of gate terminal</a></li>
+		</ul>
+	      <ul>
+			<li><a href="#header-3_2_4">Lightly doped drain (LDD) formation</a></li>
+		</ul>
+		<ul>
+			<li><a href="#header-3_2_5">Source ÃÂ drain formation</a></li>
+		</ul>
+  		<ul>
+			<li><a href="#header-3_2_6">Local interconnect formation</a></li>
+		</ul>
+		<ul>
+			<li><a href="#header-3_2_7"> Higher level metal formation</a></li>
+		</ul>
+	      <ul>
+			<li><a href="#header-3_2_8"> Lab introduction to Sky130 basic layers layout and LEF using inverter</a></li>
+		</ul>
+		<ul>
+			<li><a href="#header-3_2_9">Lab steps to create std cell layout and extract spice netlist</a></li>
+		</ul>
+      </ul>
+	<ul>
+        <li><a href="#header-3_3">Sky130 Tech File Labs</a></li>
+		<ul>
+			<li><a href="#header-3_3_1">Lab steps to create final SPICE deck using Sky130 tech</a></li>
+		</ul>
+		<ul>
+			<li><a href="#header-3_3_2">Lab steps to characterize inverter using sky130 model files</a></li>
+		</ul>
+		<ul>
+			<li><a href="#header-3_3_3"> Lab introduction to Magic tool options and DRC rules</a></li>
+		</ul>
+	      <ul>
+			<li><a href="#header-3_3_4">Lab introduction to Sky130 pdk's and steps to download labs</a></li>
+		</ul>
+		<ul>
+			<li><a href="#header-3_3_5">Lab introduction to Magic and steps to load Sky130 tech-rules</a></li>
+		</ul>
+  		<ul>
+			<li><a href="#header-3_3_6">Lab exercise to fix poly.9 error in Sky130 tech-file</a></li>
+		</ul>
+		<ul>
+			<li><a href="#header-3_3_7"> Lab exercise to implement poly resistor spacing to diff and tap</a></li>
+		</ul>
+	      <ul>
+			<li><a href="#header-3_3_8"> Lab challenge exercise to describe DRC error as geometrical construct</a></li>
+		</ul>
+		<ul>
+			<li><a href="#header-3_3_9">Lab challenge to find missing or incorrect rules and fix them</a></li>
+		</ul>
+      </ul>
+   </div>  
 
 
 # <h1 id="header-1">Day 1 -Inception of open-source EDA, OpenLANE and sky130 PDK</h1>	 
