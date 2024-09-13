@@ -182,31 +182,31 @@ If we zooom into this, we find the buffers, gates, flip flops in this.
 ### Lab steps to git clone vsdstdcelldesign ###
 
 cd ~/Desktop/work/tools/openlane_working_dir/openlane
+
 git clone https://github.com/nickson-jose/vsdstdcelldesign --depth=1
+
 cd vsdstdcelldesign
-cp ~/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech .
-magic -T sky130A.tech sky130_inv.mag &
+
+cp ~/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech .magic -T sky130A.tech sky130_inv.mag &
 
 To get the clone, copy the clone address from reporetery and paste in openlane terminal after the command ```git clone```. this will create the folder called "vsdstdcelldesign" in openlane directory.
 
-![image]()
+![image](https://github.com/user-attachments/assets/fd708406-0105-4e4a-9375-d82cb2ec54ba)
 
 now, if we open the openlane directory, we find the vsdstdcelldesing folder in the openlane directory.
 
-![image]()
 
 Now if we goe to the vsdstdcelldesign folder and open it, we get the .mag file,libs file etc.
 
-![image]()
 
 now, let's open the .mag file and see that which layers are used to build the inverter. But before opening the mag file, we need tech file. so we will copy this file from this given below address,
 And do copy by ```cp``` command to the location which is given below.Now, we can see that this file is copied in the vsdstdcelldesign folder.
 
-![image]()
+![image](https://github.com/user-attachments/assets/989195fd-b43e-45cb-906e-7278b6e644e4)
 
 Now, here to see the layout in magic, we don't need to write the whole address because we copy the tech file here.Now, we can see the layout of CMOS inverter in the magic like this.
 
-![image]()
+![image](https://github.com/user-attachments/assets/48759296-85fa-4a43-93f0-0d25c68d20ff)
 
 
 ## <h3 id="header-3_2">Inception of layout ̂A CMOS faabrication process</h3>
