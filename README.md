@@ -50,7 +50,7 @@ Now, we are ready
 
 Here Our Design  time period is 5nsec. but is we see in the openlane sky130_fd_sc_hd folder, the period is set about 24 nsec. so it is not override to the main file. If it override then give first priority to the main folder.
 
- Before To run the synthesis, we need to prepare design setup stage,  for that command is ** prep -design picorv32a** here our design name is picorv32a
+ Before To run the synthesis, we need to prepare design setup stage,  for that command is **prep -design picorv32a** here our design name is picorv32a
 
 ![image](https://github.com/user-attachments/assets/38c6ad67-84c4-4525-9fea-ac6c57e292e2)
 
@@ -59,9 +59,7 @@ Here Our Design  time period is 5nsec. but is we see in the openlane sky130_fd_s
 
 ### <h1 id="header-1_3_3">Review files after design prep and run synthesis</h1>
 
-After completing the preparation, in the picorv32a file, the run terictory is created. Inside the folder, Today's date is created. so in this terictory some folders are available which is required for openlane.
-
-In the temp file, merged.lef file is available which was created in preparation time. if we open this merged.lef file, we get all the wire or layer level and cell level information.
+ Once complete the preparation,The merged.lef file, which was created during the preparation phase, is accessible in the temp file. Opening this merged.lef file provides access to all **wire**, **layer**, and **cell level data**. 
 
 ![image](https://github.com/user-attachments/assets/5d7ce5a1-7e51-48c5-9fb3-523f0e6ef024)
 
