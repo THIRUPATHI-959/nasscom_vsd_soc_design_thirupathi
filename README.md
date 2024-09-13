@@ -209,6 +209,41 @@ Now, here to see the layout in magic, we don't need to write the whole address b
 ![image](https://github.com/user-attachments/assets/48759296-85fa-4a43-93f0-0d25c68d20ff)
 
 
+pmos
+
+![image](https://github.com/user-attachments/assets/d9248e08-dee4-4e99-95cd-172a63f6add0)
+
+nmos
+
+![image](https://github.com/user-attachments/assets/9bb2fc50-54ac-4054-b4c7-cf716bb26a2a)
+
+Spice extraction
+         extract all
+	ext2spice cthresh 0 rthresh 0
+	ext2spice
+
+ ![image](https://github.com/user-attachments/assets/419e254a-2a8a-44fa-9996-05b92e7bbc71)
+
+ ![image](https://github.com/user-attachments/assets/e8568118-9cad-4994-bdca-954cd094382f)
+
+ ![image](https://github.com/user-attachments/assets/21171f48-ff39-4435-b688-73fb06be88db)
+
+*grid size *
+
+![image](https://github.com/user-attachments/assets/9d13ff74-8a31-4d33-b50c-e4123e92f4ef)
+
+NgSpice code of Inverter:
+![image](https://github.com/user-attachments/assets/0643699e-c5f8-469d-bb67-ba9d960e1c93)
+
+plot of Y and time a AT C=0.024uf
+![image](https://github.com/user-attachments/assets/442dc153-7ba7-41e4-93c0-3bf5797ec6fe)
+
+![image](https://github.com/user-attachments/assets/bfc1aa15-7b1f-4023-a304-65245d7f1f8f)
+plot of Y and time a AT C=2uf
+![image](https://github.com/user-attachments/assets/519a9c0e-46f3-40f3-9e38-fa0d857c0434)
+
+![image](https://github.com/user-attachments/assets/a3339b74-fa36-4d3d-a87b-860903c6628a)
+
 ## <h3 id="header-3_2">Inception of layout ̂A CMOS faabrication process</h3>
 ### <h3 id="header-3_2_1">Create Active regions</h3>
 
