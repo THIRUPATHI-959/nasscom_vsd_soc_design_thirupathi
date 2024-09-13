@@ -75,24 +75,15 @@ It will take some few minutes  to run the synthesis.
 
 synthsisi completed
 
-### <h1 id="header-1_3_5">Steps to characterize synthesis results</h1>
+### Find Flop Ration from synthesis results ##
 
-From the data of synthesis, total number of counter D_flip-flops is 1613. and the number of cells is 14876.
+From the  synthesis reports, 
+total number of counter **D_flip-flops** is   **1613**. 
+&                the **number of cells**is   **14876**.
 
 ![image](https://github.com/user-attachments/assets/5bab437f-71d6-4637-b009-8b4be8c05c09)
 
-So, the flop ratio = (number of flip flops)/(number of total cell).
-
-So, the flop ratio is 10.84%.
-
-Before run, we saw that the result folder is empty. but now, after running the synthesis, we can see that all the mapping have been done by ABC.
-
-![image](https://github.com/user-attachments/assets/35ecdff6-d6ef-43e9-9e6c-5492538b3cc0)
-
-And in the report, we can see when the actual synthesis has done. and the actual statistics synthesis report is showing below, which is same as what we have seen before.
-
-
-![image](https://github.com/user-attachments/assets/2cc3cee5-62f3-42a0-977f-f3e8f7fbb816)
+ **Flop ratio = (number of flip flops)/(number of total cell)** = 1613/14876.  So, the flop ratio is **10.84%** and chip area for module  =147712.918400
 
 
 
@@ -101,7 +92,14 @@ And in the report, we can see when the actual synthesis has done. and the actual
 
 
 
-# <h2 id="header-2">Day 2 - Good floor planning considerations</h2>	 
+
+
+
+
+# Day 2 #	---FloorPlanning 
+
+
+
 ## <h2 id="header-2_1">Chip Floor planning consideration</h2>
 ### <h2 id="header-2_1_1">Utilization factor and aspect ratio</h2>
 
