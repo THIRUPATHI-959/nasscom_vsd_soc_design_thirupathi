@@ -57,25 +57,23 @@ Here Our Design  time period is 5nsec. but is we see in the openlane sky130_fd_s
  Here our Design  preparation is completed.
 
 
-### <h1 id="header-1_3_3">Review files after design prep and run synthesis</h1>
+## Merged file  and run synthesis ##
 
  Once complete the preparation,The merged.lef file, which was created during the preparation phase, is accessible in the temp file. Opening this merged.lef file provides access to all **wire**, **layer**, and **cell level data**. 
 
 ![image](https://github.com/user-attachments/assets/5d7ce5a1-7e51-48c5-9fb3-523f0e6ef024)
 
-While, in the result folder is empty because till we have not run anything and in the report folder all the folders are there about synthesis, placement, floorplanning,cts,routing,magic,lvs.
 
-now here also one config.tcl file is available similar like design folder. But this config.tcl file contains all default parameter taken by the run.
-
-when we make some change in the origional configuration and then we run, for example if we make a change in core utilization in the floorplanning and then we run the floorplanning, at this time in the congig.tcl file, the core utility will change and by cross checking it we can check that the modification is reflected in the exicution or not.
-
-Now coming to the openlane, we are going to run the synthesis. for that command is ```run_synthesis``` It will take some 3-4 mnts to run the synthesis and finally synthesis will complited.
+Come  to the openlane, we are going to run the synthesis. for that command is **run_synthesis**
+It will take some few minutes  to run the synthesis.
 
 ![image](https://github.com/user-attachments/assets/3424573b-ed06-4832-b089-a555c98ff989)
 
 
 
 ![image](https://github.com/user-attachments/assets/87c93d2c-d905-48e1-bb16-eead8d1575db)
+
+synthsisi completed
 
 ### <h1 id="header-1_3_5">Steps to characterize synthesis results</h1>
 
