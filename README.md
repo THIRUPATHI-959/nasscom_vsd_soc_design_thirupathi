@@ -22,7 +22,7 @@
 
 
 
-**DAY1**
+                                               ------------------*DAY1*-----------------
 
 
 
@@ -96,8 +96,9 @@ total number of counter **D_flip-flops** is   **1613**.
 
 
 
-# Day 2 #	---FloorPlanning 
-
+                                            --------------------# Day 2 #-----------------------	
+								     
+                                                         ---# FloorPlanning#--- 
  docker
 
 ./flow.tcl -interactive
