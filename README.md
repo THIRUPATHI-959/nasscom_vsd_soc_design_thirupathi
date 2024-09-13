@@ -48,13 +48,13 @@ Now, we are ready
 
 ![image](https://github.com/user-attachments/assets/bccf2262-0883-4353-8574-84afd9771cdd)
 
-Here we can see that the time period is set to the 5.00 nsec. but is we see in the openlane sky130_fd_sc_hd folder, the period is set about 24 nsec. so it is not override to the main file. If it override then give first priority to the main folder.
+Here Our Design  time period is 5nsec. but is we see in the openlane sky130_fd_sc_hd folder, the period is set about 24 nsec. so it is not override to the main file. If it override then give first priority to the main folder.
 
-Now, in openlane, we are going to run the synthesis, but before synthesis, we have to prepare design setup stage. for that command is ``` prep -design picorv32a```
+ Before To run the synthesis, we need to prepare design setup stage,  for that command is ** prep -design picorv32a** here our design name is picorv32a
 
 ![image](https://github.com/user-attachments/assets/38c6ad67-84c4-4525-9fea-ac6c57e292e2)
 
-so, here it is shown that preparation is completed.
+ Here our Design  preparation is completed.
 
 
 ### <h1 id="header-1_3_3">Review files after design prep and run synthesis</h1>
