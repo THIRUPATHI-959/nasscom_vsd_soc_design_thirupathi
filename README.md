@@ -118,31 +118,16 @@ prior run the floorplanning ,we can get from the configuration from openlane.As 
 
 ![image](https://github.com/user-attachments/assets/23317dc7-6d5e-4bd6-a48a-eda1229ca268)
 
-Here FP_PDN files are set the power distribution network. These switches are set in the floorplane stage bydefault in OpenLANE.
 
-![image](https://github.com/user-attachments/assets/785cbae5-402c-4aa8-94a0-33c94793e791)
+### Analyzie floorplan files and steps to run floorplan ###
 
-Here, (FP_IO MODE) 1, 0 means pin positioning is random but it is on equal distance.
-
-In the OpenLANE lower priority is given to system default (floorplanning.tcl), the next priority is given to config.tcl and then priority is given to PDK varient.tcl (sky130A_sky130_fd_sc_hd_congig.tcl).
-
-Now we see, with this settings how floorplan run.
-
-### <h2 id="header-2_1_7">Review floorplan files and steps to view floorplan</h2>
-
-In the run folder, we can see the connfig.tcl file. this file contains all the configuration that are taken by the flow. if we open the config.tcl file, then we can see that which are the parameters are accepted in the current flow.
-
-![image](https://github.com/user-attachments/assets/e88b3965-9d85-483c-bacc-d928ac09ec98)
-
-![image](https://github.com/user-attachments/assets/166b4c79-7941-45af-beb8-a7c07b32b183)
-
-To watch how floorplane looks, we have to go in the results. in the result, one def( design exchange formate) file is available. if we open this file, we can see all information about die area (0 0) (660685 671405), unit distance in micron (1000). it means 1 micron means 1000 databased units. so 660685 and 671405 are databased units. and if we devide this by 1000 then we can get the dimensions of chips in micrometer.
+In Floorplan  we have the  def( design exchange formate) file in this file we have the information about die area (0 0) (660685 671405), unit distance in micron (1000). so, the width of chip is 660.685 micrometer and height of the chip is 671.405 micrometer.
 
 ![image](https://github.com/user-attachments/assets/6dc65290-3a61-4721-a0a1-242982e24675)
 
-so, the width of chip is 660.685 micrometer and height of the chip is 671.405 micrometer.
 
-To see the actual layout after the flow, we have to open the magic file by adding the command ```[magic -T /home/kunalg123/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.floorplan.def]```
+
+To see the  layout after the flow, we have to open the magic file enter the  ```[magic -T /home/kunalg123/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.floorplan.def]```
 
 And then after pressing the enter, Magic file will open. here we can see the layout.
 
