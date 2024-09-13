@@ -692,3 +692,29 @@ Now we will open the magic tool and execute the commands ```drc style drc(full)`
 
 
 
+
+
+
+ 
+					-----------------# DAY-4 #----------------------
+                                                        CTS & STA
+
+       cd ~/Desktop/work/tools/openlane_working_dir/openlane/vsdstdcelldesign magic -T sky130A.tech sky130_inv.mag &
+  cat ~/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/openlane/sky130_fd_sc_hd/tracks.info
+  
+  ![image](https://github.com/user-attachments/assets/b4f66cfc-a689-40c3-ace2-ec7c3873a380)
+
+  before grid
+
+  ![image](https://github.com/user-attachments/assets/f233bd83-4879-4f8c-a3df-5c237ac6455b)
+
+  after grid
+  ![image](https://github.com/user-attachments/assets/9c05b945-ca62-4788-9fda-93ca3c4b126b)
+  
+
+
+  
+Setting grid according to tracks.info
+grid 0.46um 0.34um 0.23um 0.17um
+
+
