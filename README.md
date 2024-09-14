@@ -332,3 +332,58 @@ Setting grid according to tracks.info
 grid 0.46um 0.34um 0.23um 0.17um
 
 
+Modifiying Config.tcl
+
+![image](https://github.com/user-attachments/assets/8660e0e0-2f6c-421c-8745-3abf6674d0b2)
+
+
+![image](https://github.com/user-attachments/assets/93d470fc-e5bb-48d9-98a7-db5b2cbd9880)
+
+
+![image](https://github.com/user-attachments/assets/1a3d94fd-b726-4ff4-b751-ec762a7519f3)
+
+
+![image](https://github.com/user-attachments/assets/89d26f31-1333-4381-94a6-7801ff25493e)
+
+
+![image](https://github.com/user-attachments/assets/c353dc86-fa88-493f-a841-bff79f30f32)
+
+
+**STA**
+Write the Constraints in pre_sta and my_base.sdc command for STA , on Gvim platform Gvim 
+
+![image](https://github.com/user-attachments/assets/20d5560e-7b13-4ca4-91e5-242323ef2ee4)
+
+
+
+
+![image](https://github.com/user-attachments/assets/26c0da0b-40f1-4159-97a5-df9c5909f758)
+
+
+![image](https://github.com/user-attachments/assets/b430edbb-3c14-40ad-b737-796e2653e88a)
+
+
+**cd /Desktop/work/tools/openlane_working_dir/openlane**
+
+**docker** 
+
+
+**./flow.tcl -interactive**
+
+**package require openlane 0.9**
+
+**prep -design picorv32a -tag 12-09_17-48 -overwrite**
+
+**set lefs [glob $::env(DESIGN_DIR)/src/*.lef]**
+
+**add_lefs -src $lefs**
+
+**set ::env(CLOCK_PERIOD) "24.73"**
+
+**run_synthesis**
+
+![image](https://github.com/user-attachments/assets/9916e1f0-7105-4991-b678-a2a899e36d0a)
+
+
+![image](https://github.com/user-attachments/assets/0e586356-5574-4683-8998-f0970db008e3)
+
