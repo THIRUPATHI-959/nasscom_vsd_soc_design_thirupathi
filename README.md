@@ -217,9 +217,12 @@ nmos
 
 ![image](https://github.com/user-attachments/assets/9bb2fc50-54ac-4054-b4c7-cf716bb26a2a)
 
-Spice extraction
+**Spice extraction**
+
          extract all
+	 
 	ext2spice cthresh 0 rthresh 0
+ 
 	ext2spice
 
  ![image](https://github.com/user-attachments/assets/419e254a-2a8a-44fa-9996-05b92e7bbc71)
@@ -237,12 +240,70 @@ NgSpice code of Inverter:
 
 plot of Y and time a AT C=0.024uf
 ![image](https://github.com/user-attachments/assets/442dc153-7ba7-41e4-93c0-3bf5797ec6fe)
-
+**rise_time**
+Rise Time= time taken for output to reach 80%  of 3.3v- time taken for output to reach 20%  of 3.3v
+	 = 2.245e^-9 - 2.182^e-9
+	 =0.063^e-9
+	 =63ps
 ![image](https://github.com/user-attachments/assets/bfc1aa15-7b1f-4023-a304-65245d7f1f8f)
+
+**fall_time**
+Fall Time= time taken for output to reach 20% of 3.3v - time taken for output to reach 80% of 3.3v
+	 = 4.0952e^-9 - 4.052^e-9
+	 =0.0432^e-9
+	 =43.2ps
+  ![imahge]
+
+**cell_daely**
+![image](https://github.com/user-attachments/assets/06ee9de6-cc4e-4b9f-8cce-0c0ccd24d3aa)
+Rise Cell Delay= time taken for output to rise 50%  of 3.3v - time taken for input to fall 50% of 3.3v
+			   = 2.21103e^-9 - 2.15e^-9
+			   =0.06103e^-9
+			   =61.03ps
+
+
+![image](https://github.com/user-attachments/assets/b277f6ed-1806-483b-bd61-ff94b6802436)
+
+![image](https://github.com/user-attachments/assets/878425d1-baab-449c-ab7b-e6bbdaf7d3f1)
 plot of Y and time a AT C=2uf
 ![image](https://github.com/user-attachments/assets/519a9c0e-46f3-40f3-9e38-fa0d857c0434)
 
 ![image](https://github.com/user-attachments/assets/a3339b74-fa36-4d3d-a87b-860903c6628a)
+
+**DRC Rules checks**
+
+cd ~
+wget http://opencircuitdesign.com/open_pdks/archive/drc_tests.tgz
+tar xfz drc_tests.tgz
+cd drc_tests
+ls -al
+vi .magicrc
+magic -d XR 
+
+![image](https://github.com/user-attachments/assets/9cafa9c1-6ce0-4d49-8e84-0f2bdc5b3c05)
+
+![image](https://github.com/user-attachments/assets/67befd5b-3f1c-4659-9694-a8ac0b14bf54)
+
+![image](https://github.com/user-attachments/assets/b554fec1-421a-4821-9e94-63ad58023371)
+
+
+**Incorrect drc poly.9 check**
+
+![image](https://github.com/user-attachments/assets/c387ee38-a240-4772-ac3e-2c813457503b)
+
+Without Modified DRC file
+
+![image](https://github.com/user-attachments/assets/7583b10d-7d3a-4f1d-8aba-2fb415b60371)
+
+![image](https://github.com/user-attachments/assets/6d65ab27-c5ed-4c80-9e5e-226b9d1b1e0a)
+
+modified DRC File
+
+![image](https://github.com/user-attachments/assets/b0eca235-a6a7-4d49-97be-1c6933da238e)
+
+![image](https://github.com/user-attachments/assets/bf21db1c-b507-4003-8915-ac033a568722)
+
+
 
 
 
