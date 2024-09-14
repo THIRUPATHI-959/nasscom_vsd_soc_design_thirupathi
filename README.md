@@ -372,7 +372,7 @@ Write the Constraints in pre_sta and my_base.sdc command for STA , on Gvim platf
 
 **package require openlane 0.9**
 
-**prep -design picorv32a -tag 12-09_17-48 -overwrite**
+**prep -design picorv32a -tag 11-09_13.59 -overwrite**
 
 **set lefs [glob $::env(DESIGN_DIR)/src/*.lef]**
 
