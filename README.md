@@ -311,8 +311,10 @@ modified DRC File
 					-----------------# DAY-4 #----------------------
                                                         CTS & STA
 
-       cd ~/Desktop/work/tools/openlane_working_dir/openlane/vsdstdcelldesign magic -T sky130A.tech sky130_inv.mag &
-  cat ~/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/openlane/sky130_fd_sc_hd/tracks.info
+       
+
+      ``` cd ~/Desktop/work/tools/openlane_working_dir/openlane/vsdstdcelldesign magic -T sky130A.tech sky130_inv.mag &```
+        ```cat ~/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/openlane/sky130_fd_sc_hd/tracks.info```
   
   ![image](https://github.com/user-attachments/assets/b4f66cfc-a689-40c3-ace2-ec7c3873a380)
 
