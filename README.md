@@ -394,32 +394,28 @@ Write the Constraints in pre_sta and my_base.sdc command for STA , on Gvim platf
 Updating Design Variables, Including Custom LEF, and Running Synthesis for picorv32a
 
 
-# Prep design modified with a custom tag and overwrite .
-prep -design picorv32a -tag 09-09_06-53 -overwrite
+ prep -design picorv32a -tag 09-09_06-53 -overwrite
 
-# Additional commands to include newly added LEF files into OpenLANE flow
 set lefs [glob $::env(DESIGN_DIR)/src/*.lef]
 add_lefs -src $lefs
 
-# Display the current value of the SYNTH_STRATEGY variable
+
 echo $::env(SYNTH_STRATEGY)
 
-# Set a new value for the SYNTH_STRATEGY variable
+
 set ::env(SYNTH_STRATEGY) "DELAY 3"
 
-# Display the current value of the SYNTH_BUFFERING variable to check whether it's enabled
+
 echo $::env(SYNTH_BUFFERING)
 
-# Display the current value of the SYNTH_SIZING variable
 echo $::env(SYNTH_SIZING)
 
-# Set a new value for the SYNTH_SIZING variable
+
 set ::env(SYNTH_SIZING) 1
 
-# Display the current value of the SYNTH_DRIVING_CELL variable to check if it's the proper cell
+
 echo $::env(SYNTH_DRIVING_CELL)
 
-# Now that the design is prepped and ready, run synthesis using the following command
 run_synthesis
 
 
@@ -430,24 +426,30 @@ run_synthesis
 ![image](https://github.com/user-attachments/assets/b4f9ddc5-60b0-475b-8527-f06536c317aa)
 
 
+![image](https://github.com/user-attachments/assets/63db03cd-0bb1-42e7-bcfe-d4b9773cbbce)
+
+
  **Floorplan**
 
  ![image](https://github.com/user-attachments/assets/118c1d58-726e-48d4-81c7-3f32768cd64e)
 
- # Initialize the floorplan setup
+ **Initialize floorplan**
+ 
 init_floorplan
 
 ![image](https://github.com/user-attachments/assets/37a85362-8735-450c-8dd7-8ad1d15e01dd)
 
-# Place the input/output (IO) pins
+**Place the input/output**
 place_io
 
 ![image](https://github.com/user-attachments/assets/9b5a249a-2649-454e-ac14-6b46d16f691f)
 
-# Apply tap and decap to the floorplan
+**tap and decap to the floorplan**
 tap_decap_or
 
+ ![image](https://github.com/user-attachments/assets/9d836e6c-b142-4f4d-86de-fcd01df8316f)
 
+ 
 **run_placement**
 
 
