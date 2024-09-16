@@ -199,6 +199,11 @@ If we zooom into this, we find the buffers, gates, flip flops in this.
 ![image](https://github.com/user-attachments/assets/8aea2c9d-560b-4397-b719-86714f9177d4)
 
 
+...........................................................................................................................................................................
+
+						------------------# DAY-3#------------------
+
+............................................................................................................................................................................
 
 
 
@@ -206,16 +211,19 @@ If we zooom into this, we find the buffers, gates, flip flops in this.
 
 
 
+
+# Inverter Standard cell Layout #
 
 ### Lab steps to git clone vsdstdcelldesign ###
+The inverter magic file is sourced from vsdstdcelldesign by open lane directory as follows,
 
-cd ~/Desktop/work/tools/openlane_working_dir/openlane
+1.**cd ~/Desktop/work/tools/openlane_working_dir/openlane**
 
-git clone https://github.com/nickson-jose/vsdstdcelldesign --depth=1
+2.**git clone https://github.com/nickson-jose/vsdstdcelldesign**
 
-cd vsdstdcelldesign
+3.**cd vsdstdcelldesign**
 
-cp ~/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech .magic -T sky130A.tech sky130_inv.mag &
+4.**cp ~/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech .magic -T sky130A.tech sky130_inv.mag &** :Copying the sky130A.tech File to the VSD Standard Cell Design Directory
 
 To get the clone, copy the clone address from reporetery and paste in openlane terminal after the command ```git clone```. this will create the folder called "vsdstdcelldesign" in openlane directory.
 
@@ -245,13 +253,13 @@ nmos
 
 ![image](https://github.com/user-attachments/assets/9bb2fc50-54ac-4054-b4c7-cf716bb26a2a)
 
-**Spice extraction**
+## Spice extraction ##
 
-         extract all
+1.**extract all**:Extract to .ext Format
 	 
-	ext2spice cthresh 0 rthresh 0
+2.**ext2spice cthresh 0 rthresh 0**:Enable Parasitic Extraction
  
-	ext2spice
+3.**ext2spice**:Convert to SPICE Format
 
  ![image](https://github.com/user-attachments/assets/419e254a-2a8a-44fa-9996-05b92e7bbc71)
  
@@ -276,6 +284,11 @@ Rise Time= time taken for output to reach 80%  of 3.3v- time taken for output to
 	 = 2.24988e^-9 - 2.18412^e-9
 	 =0.06376^e-9
 	 =63.76ps
+
+
+  ![image](https://github.com/user-attachments/assets/878425d1-baab-449c-ab7b-e6bbdaf7d3f1)
+
+  
 ![image](https://github.com/user-attachments/assets/bfc1aa15-7b1f-4023-a304-65245d7f1f8f)
 
 **fall_time**
@@ -295,30 +308,49 @@ Rise Cell Delay= time taken for output to rise 50%  of 3.3v - time taken for inp
 
 ![image](https://github.com/user-attachments/assets/b277f6ed-1806-483b-bd61-ff94b6802436)
 
-![image](https://github.com/user-attachments/assets/878425d1-baab-449c-ab7b-e6bbdaf7d3f1)
+
 plot of Y and time a AT C=2uf
 ![image](https://github.com/user-attachments/assets/519a9c0e-46f3-40f3-9e38-fa0d857c0434)
 
 ![image](https://github.com/user-attachments/assets/a3339b74-fa36-4d3d-a87b-860903c6628a)
 
-**DRC Rules checks**
+## DRC Rules checks ##
 
-cd ~
-wget http://opencircuitdesign.com/open_pdks/archive/drc_tests.tgz
-tar xfz drc_tests.tgz
-cd drc_tests
-ls -al
-vi .magicrc
-magic -d XR 
+
+Google_Skywaters Design Rules: https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html
+
+
+
+1.**wget http://opencircuitdesign.com/open_pdks/archive/drc_tests.tgz**:: Download the lab files
+
+2.**tar xfz drc_tests.tgz**:: Extract the compressed lab files
+
+3.**cd drc_tests**:: Change directory into the lab folder
+
+4.**ls -al**:: List all files and directories with detailed information
+
+5.**vi .magicrc**:: View the .magicrc file using gvim
+
+6.**magic -d XR**:: Open Magic tool with better graphics (using XR display) 
 
 ![image](https://github.com/user-attachments/assets/9cafa9c1-6ce0-4d49-8e84-0f2bdc5b3c05)
 
+
 ![image](https://github.com/user-attachments/assets/67befd5b-3f1c-4659-9694-a8ac0b14bf54)
+
+
+![image](https://github.com/user-attachments/assets/428ccd2c-e20a-4173-856b-bb0ad0f8f2f3)
+
+
+![image](https://github.com/user-attachments/assets/1873cb63-6055-4930-bbd7-833728c84b16)
+
 
 ![image](https://github.com/user-attachments/assets/b554fec1-421a-4821-9e94-63ad58023371)
 
 
 **Incorrect drc poly.9 check**
+
+fix poly.9 error in Sky130 tech-file
 
 ![image](https://github.com/user-attachments/assets/c387ee38-a240-4772-ac3e-2c813457503b)
 
@@ -333,6 +365,11 @@ modified DRC File
 ![image](https://github.com/user-attachments/assets/b0eca235-a6a7-4d49-97be-1c6933da238e)
 
 ![image](https://github.com/user-attachments/assets/bf21db1c-b507-4003-8915-ac033a568722)
+
+
+To find the nwell.6 model error, open the nwell.mag file in the Magic tool. In the figure, the deep nwell is shown with yellow stripes, and the nwell is shown with a dotted green pattern.
+
+![image](https://github.com/user-attachments/assets/5a52d71d-82d0-4672-90ff-a80fe98a0101)
 
 
 
