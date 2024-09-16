@@ -442,24 +442,32 @@ LEF extraction can be carried out in tkcon:
 
 ![image](https://github.com/user-attachments/assets/d26a5d16-d871-4825-85ea-9523e26ead78)
 
+
 created lef file
 
+
 ![image](https://github.com/user-attachments/assets/25e93629-9d80-40e3-b5d9-1c7dd4970dbc)
+
 
 Edit 'config.tcl' to change lib file and add the new extra lef into the openlane flow.
 
 1. Setting the LIB Files:
+   
 2.Adding the Custom LEF File:
 
 3.Final Steps:
+
 Save the config.tcl file with these changes.
+
 When you run the OpenLane flow, it will automatically use the modified library paths and include your custom cell's LEF file.
+
 
 ![image](https://github.com/user-attachments/assets/0b2e93e8-b562-44ef-b971-d8207bfb9a81)
 
 
 
 **STA**
+
 Write the Constraints in pre_sta and my_base.sdc command for STA , on Gvim platform Gvim 
 
 ![image](https://github.com/user-attachments/assets/20d5560e-7b13-4ca4-91e5-242323ef2ee4)
@@ -473,6 +481,7 @@ Write the Constraints in pre_sta and my_base.sdc command for STA , on Gvim platf
 ![image](https://github.com/user-attachments/assets/b430edbb-3c14-40ad-b737-796e2653e88a)
 
 
+Invoking OpenLANE Flow, Including New LEF, and Running Synthesis for picorv32a
 **cd /Desktop/work/tools/openlane_working_dir/openlane**
 
 **docker** 
