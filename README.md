@@ -3,6 +3,7 @@
 # DAY-1 #
 
 .........................................................................................................................................................................
+
 **Basic Linux Commands how to use in our workshop**
 
 **pwd**: it gives the present working directory
@@ -105,6 +106,7 @@ total number of counter **D_flip-flops** is   **1613**.
                                             --------------------# Day 2 #-----------------------	
 
 .............................................................................................................................................................................
+
  docker
 
 ./flow.tcl -interactive
@@ -146,6 +148,12 @@ Die height in microns:671.405 microns
 Area of the die in square microns:
 Area = 660.685 microns * 671.405 microns = 443587.212425 square microns
  The area of the die is approximately **443587.21** square microns
+
+
+ Change directory: Navigate to the folder containing the generated floorplan .def file.
+cd Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/11-09_13-59/results/floorplan/
+Run Magic: Load the floorplan .def file using the Magic tool and the Sky130 technology file.
+
 
 To see the  layout, we have to open the magic file enter the **[magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.floorplan.def] &** after enter this command , Magic file will open. here we can see the layout.
 
