@@ -440,9 +440,11 @@ LEF extraction can be carried out in tkcon:
 
 **lef** write
 
-![image]()
+![image](https://github.com/user-attachments/assets/d26a5d16-d871-4825-85ea-9523e26ead78)
 
 created lef file
+
+![image](https://github.com/user-attachments/assets/25e93629-9d80-40e3-b5d9-1c7dd4970dbc)
 
 
 
