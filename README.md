@@ -634,3 +634,27 @@ cd  /Desktop/work/tools/openlane_working_dir/openlane
 
 
 
+cd ~/Desktop/work/tools/openlane_working_dir/openlane
+docker
+./flow.tcl -interactive
+package require openlane 0.9
+prep -design picorv32a -tag 12-09_17-48 -overwrite
+set lefs [glob $::env(DESIGN_DIR)/src/*.lef]
+add_lefs -src $lefs
+set ::env(CLOCK_PERIOD) "24.73"
+run_synthesis
+
+
+![image](https://github.com/user-attachments/assets/9f64e362-a9de-4ce1-91b4-a3249617376c)
+
+![image](https://github.com/user-attachments/assets/92d2e90e-8076-464b-849f-ee006c0073bf)
+
+
+setting max fanout size as 4 and run_synthesis again
+
+set ::env(SYNTH_MAX_FANOUT) 4
+rm -rf  ~/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/11-09_13-59/results/synthesis/picorv32a.synthesis.v
+run_synthesis
+
+
+
