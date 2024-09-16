@@ -1,6 +1,7 @@
 .......................................................................................................................................................................
 # nasscom_vsd_soc_design_workshop #
-# DAY-1 #
+
+# DAY-1_Lab #
 
 .........................................................................................................................................................................
 
@@ -101,9 +102,8 @@ total number of counter **D_flip-flops** is   **1613**.
 
 
 
-.............................................................................................................................................................................
-
-                                            --------------------# Day 2 #-----------------------	
+............................................................................................................................................................................
+# Day_2_Lab #	
 
 .............................................................................................................................................................................
 
@@ -201,7 +201,7 @@ If we zooom into this, we find the buffers, gates, flip flops in this.
 
 ...........................................................................................................................................................................
 
-						------------------# DAY-3#------------------
+# DAY-3_lab#
 
 ............................................................................................................................................................................
 
@@ -372,32 +372,44 @@ To find the nwell.6 model error, open the nwell.mag file in the Magic tool. In t
 ![image](https://github.com/user-attachments/assets/5a52d71d-82d0-4672-90ff-a80fe98a0101)
 
 
+............................................................................................................................................................................
 
+# DAY-4_lab #
+............................................................................................................................................................................
+     Ports must be located at the intersection of horizontal and vertical tracks, per tracks.info specifications. On the li1 layer are ports A and Y of the CMOS inverter. Make sure they are on the intersection of the vertical and horizontal tracks. We go to tracks.info.
 
-
+     
+**cd ~/Desktop/work/tools/openlane_working_dir/openlane/vsdstdcelldesign magic -T sky130A.tech sky130_inv.mag &**
  
-					-----------------# DAY-4 #----------------------
-                                                        CTS & STA
+**/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/openlane/sky130_fd_sc_hd/tracks.info**
 
-       
-
-      ``` cd ~/Desktop/work/tools/openlane_working_dir/openlane/vsdstdcelldesign magic -T sky130A.tech sky130_inv.mag &```
-        ```cat ~/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/openlane/sky130_fd_sc_hd/tracks.info```
   
   ![image](https://github.com/user-attachments/assets/b4f66cfc-a689-40c3-ace2-ec7c3873a380)
 
+**help grid**:This command will show you the syntax and options available for the grid command in Magic
+
   before grid
+  
 
   ![image](https://github.com/user-attachments/assets/f233bd83-4879-4f8c-a3df-5c237ac6455b)
 
   after grid
+  
   ![image](https://github.com/user-attachments/assets/9c05b945-ca62-4788-9fda-93ca3c4b126b)
   
 
 
   
 Setting grid according to tracks.info
-grid 0.46um 0.34um 0.23um 0.17um
+
+**grid** 0.46um 0.34um 0.23um 0.17um
+
+describe above grid 
+
+0.46um: X-grid spacing (main grid)
+0.34um: Y-grid spacing (main grid)
+0.23um: X-grid spacing (minor grid)
+0.17um: Y-grid spacing (minor grid)
 
 
 Modifiying Config.tcl
@@ -415,6 +427,23 @@ Modifiying Config.tcl
 
 
 ![image](https://github.com/user-attachments/assets/c353dc86-fa88-493f-a841-bff79f30f32)
+
+
+Save the Layout
+
+**save** sky130_vsdinv.mag
+
+![image]()
+
+
+LEF extraction can be carried out in tkcon:
+
+**lef** write
+
+![image]()
+
+created lef file
+
 
 
 **STA**
