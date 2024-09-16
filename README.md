@@ -482,26 +482,31 @@ Write the Constraints in pre_sta and my_base.sdc command for STA , on Gvim platf
 
 
 Invoking OpenLANE Flow, Including New LEF, and Running Synthesis for picorv32a
-**cd /Desktop/work/tools/openlane_working_dir/openlane**
 
-**docker** 
+1.**cd /Desktop/work/tools/openlane_working_dir/openlane**
+
+2.**docker** 
 
 
-**./flow.tcl -interactive**
+3.**./flow.tcl -interactive**
 
-**package require openlane 0.9**
+4.**package require openlane 0.9**
 
-**prep -design picorv32a -tag 11-09_13.59 -overwrite**
+5.**prep -design picorv32a -tag 11-09_13.59 -overwrite**
 
-**set lefs [glob $::env(DESIGN_DIR)/src/*.lef]**
+6.**set lefs [glob $::env(DESIGN_DIR)/src/*.lef]**
 
-**add_lefs -src $lefs**
+7.**add_lefs -src $lefs**
 
-**set ::env(CLOCK_PERIOD) "24.73"**
+8.**set ::env(CLOCK_PERIOD) "24.73"**
 
-**run_synthesis**
+9.**run_synthesis**
 
 ![image](https://github.com/user-attachments/assets/9916e1f0-7105-4991-b678-a2a899e36d0a)
+
+
+
+By changing the design specifications and adding a custom inverter cell, reduce the newly introduced infractions.
 
 
 ![image](https://github.com/user-attachments/assets/0e586356-5574-4683-8998-f0970db008e3)
@@ -510,29 +515,30 @@ Invoking OpenLANE Flow, Including New LEF, and Running Synthesis for picorv32a
 Updating Design Variables, Including Custom LEF, and Running Synthesis for picorv32a
 
 
- prep -design picorv32a -tag 09-09_06-53 -overwrite
+ 1.**prep -design picorv32a -tag 11-09_13-53 -overwrite**
 
-set lefs [glob $::env(DESIGN_DIR)/src/*.lef]
-add_lefs -src $lefs
+2.**set lefs [glob $::env(DESIGN_DIR)/src/*.lef]**
 
-
-echo $::env(SYNTH_STRATEGY)
+3.**add_lefs -src $lefs**
 
 
-set ::env(SYNTH_STRATEGY) "DELAY 3"
+4.**echo $::env(SYNTH_STRATEGY)**
 
 
-echo $::env(SYNTH_BUFFERING)
-
-echo $::env(SYNTH_SIZING)
+5.**set ::env(SYNTH_STRATEGY) "DELAY 3"**
 
 
-set ::env(SYNTH_SIZING) 1
+6.**echo $::env(SYNTH_BUFFERING)**
+
+7.**echo $::env(SYNTH_SIZING)**
 
 
-echo $::env(SYNTH_DRIVING_CELL)
+8.**set ::env(SYNTH_SIZING) 1**
 
-run_synthesis
+
+9.**echo $::env(SYNTH_DRIVING_CELL)**
+
+10.**run_synthesis**
 
 
 
@@ -586,19 +592,45 @@ tap_decap_or
 
 Change directory
 
-cd Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/09-09_06-53/results/placement/
+
+cd Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/11-09_13-59/results/placement/
 
 Here , Run Magic: Load the placement .def file in the Magic tool, using the Sky130 technology file.
+
 
 **magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.placement.def &**
 
 
 ![image](https://github.com/user-attachments/assets/e7a1ebb2-b422-48f8-8102-bed5bcba1dd4)
 
+
 **standard cells**
 
 
 ![image](https://github.com/user-attachments/assets/94ce2090-b4c7-46e0-a99c-9cf04d7c9f86)
+
+
+
+**Creating Pre_sta.conf and**
+
+![image](https://github.com/user-attachments/assets/9f24141c-3661-42a6-8c3c-892395f76a26)
+
+
+![image](https://github.com/user-attachments/assets/4aefea51-e3f7-4210-a601-1ea55d6cdf8a)
+
+**creatingMy_base.sdc**
+
+![image](https://github.com/user-attachments/assets/2de1ee2e-7b78-4e8a-a1b4-60d6f38094e0)
+
+
+
+cd  /Desktop/work/tools/openlane_working_dir/openlane
+**sta pre_sta.conf**
+
+![image](https://github.com/user-attachments/assets/516f77a4-ab76-41a9-95cd-91decbf66e13)
+
+
+![image](https://github.com/user-attachments/assets/53d129b6-b291-4a95-8da0-86d1309b9f3e)
 
 
 
