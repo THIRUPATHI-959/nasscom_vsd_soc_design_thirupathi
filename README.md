@@ -273,24 +273,24 @@ plot of Y and time a AT C=0.024uf
 ![image](https://github.com/user-attachments/assets/442dc153-7ba7-41e4-93c0-3bf5797ec6fe)
 **rise_time**
 Rise Time= time taken for output to reach 80%  of 3.3v- time taken for output to reach 20%  of 3.3v
-	 = 2.245e^-9 - 2.182^e-9
-	 =0.063^e-9
-	 =63ps
+	 = 2.24988e^-9 - 2.18412^e-9
+	 =0.06376^e-9
+	 =63.76ps
 ![image](https://github.com/user-attachments/assets/bfc1aa15-7b1f-4023-a304-65245d7f1f8f)
 
 **fall_time**
 Fall Time= time taken for output to reach 20% of 3.3v - time taken for output to reach 80% of 3.3v
-	 = 4.0952e^-9 - 4.052^e-9
+	 = 4.07563e^-9 - 4.05^e-9
 	 =0.0432^e-9
 	 =43.2ps
-  ![imahge]
+  ![imahge](https://github.com/user-attachments/assets/ba1c6ea7-02b9-42de-bafc-0ad14fd0be68)
 
 **cell_daely**
 ![image](https://github.com/user-attachments/assets/06ee9de6-cc4e-4b9f-8cce-0c0ccd24d3aa)
 Rise Cell Delay= time taken for output to rise 50%  of 3.3v - time taken for input to fall 50% of 3.3v
-			   = 2.21103e^-9 - 2.15e^-9
-			   =0.06103e^-9
-			   =61.03ps
+			   = 2.21366e^-9 - 2.15012e^-9
+			   =0.061354e^-9
+			   =63.54ps
 
 
 ![image](https://github.com/user-attachments/assets/b277f6ed-1806-483b-bd61-ff94b6802436)
