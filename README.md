@@ -446,6 +446,17 @@ created lef file
 
 ![image](https://github.com/user-attachments/assets/25e93629-9d80-40e3-b5d9-1c7dd4970dbc)
 
+Edit 'config.tcl' to change lib file and add the new extra lef into the openlane flow.
+
+1. Setting the LIB Files:
+2.Adding the Custom LEF File:
+
+3.Final Steps:
+Save the config.tcl file with these changes.
+When you run the OpenLane flow, it will automatically use the modified library paths and include your custom cell's LEF file.
+
+![image](https://github.com/user-attachments/assets/0b2e93e8-b562-44ef-b971-d8207bfb9a81)
+
 
 
 **STA**
