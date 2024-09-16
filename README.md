@@ -1,4 +1,8 @@
+.......................................................................................................................................................................
+# nasscom_vsd_soc_design_workshop #
+# DAY-1 #
 
+.........................................................................................................................................................................
 **Basic Linux Commands how to use in our workshop**
 
 **pwd**: it gives the present working directory
@@ -22,24 +26,26 @@
 
 
 
-                                               ------------------*DAY1*-----------------
 
+# Design Preparation Step #
+.
+Invoke Openlane flow and perform synthesis
 
+Change Directory
 
+1.**cd Desktop/work/tools/openlane_working_dir/openlane**
+2. **Create Docker Alias**
+Once the alias is set, you can start the OpenLANE flow Docker container by running
 
-# nasscom_vsd_soc_design_workshop
+3.**docker**:Running the OpenLANE Flow Script in Interactive Mode
 
- 
+4. **./flow.tcl -interactive**: Loading the OpenLANE Package in Tcl
 
-
-
-
-**Design Preparation Step**
-To open the OpenLANE we need need enter in the OpenLANE, Here we  have to use **./flow.tcl -nteractive** command use in script .  Now OpenLANE is open and we can see that prompt will change now.
+5.**% package require openlane**:Preparing the picorv32a Design for Processing
+6.**% prep -design picorv32a**
 
 ![image](https://github.com/user-attachments/assets/ed3aed35-fe5f-460e-b782-60dfd92f18df)
 
-we have to enter  input **packages require openLANE 0.9**  which required to run the flow.
 
 ![image](https://github.com/user-attachments/assets/46d2cc3c-9591-4729-ad8d-745464d16a36)
 
@@ -63,7 +69,7 @@ Here Our Design  time period is 5nsec. but is we see in the openlane sky130_fd_s
 
 ![image](https://github.com/user-attachments/assets/5d7ce5a1-7e51-48c5-9fb3-523f0e6ef024)
 
-
+7.**run_synthesis**
 Come  to the openlane, we are going to run the synthesis. for that command is **run_synthesis**
 It will take some few minutes  to run the synthesis.
 
@@ -94,11 +100,11 @@ total number of counter **D_flip-flops** is   **1613**.
 
 
 
-
+.............................................................................................................................................................................
 
                                             --------------------# Day 2 #-----------------------	
-								     
-                                                         ---# FloorPlanning#--- 
+
+.............................................................................................................................................................................
  docker
 
 ./flow.tcl -interactive
@@ -109,7 +115,7 @@ prep -design picorv32a
 
 run_synthesis
 
-run_floorplan
+8.**run_floorplan**
 
 
 
@@ -126,6 +132,20 @@ In Floorplan  we have the  def( design exchange formate) file in this file we ha
 ![image](https://github.com/user-attachments/assets/6dc65290-3a61-4721-a0a1-242982e24675)
 
 
+
+
+## Die Area Calculation ##
+Values:
+Die width in unit distance= 660685-0
+Die height in unit distance= 671405-0
+Conversion to microns:
+Since 1000 unit distance = 1 micron:
+
+Die width in microns: 660.685 microns
+Die height in microns:671.405 microns
+Area of the die in square microns:
+Area = 660.685 microns * 671.405 microns = 443587.212425 square microns
+ The area of the die is approximately **443587.21** square microns
 
 To see the  layout, we have to open the magic file enter the **[magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.floorplan.def] &** after enter this command , Magic file will open. here we can see the layout.
 
